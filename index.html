@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Movie App</title>
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- style.css link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container ">
+      <div class="row search-container ">
+        <div class="col-md-12 heading">
+          <h1>CinemaSearch</h1>
+          <p>
+            Discover movies instantly. Explore plots, ratings, and more with a
+            single search.
+          </p>
+        </div>
+        <div class="col-sm-8 col-md-5 input-col">
+          <div class="input-group" id="input-group">
+            <input
+              class="input-box"
+              id="input-box"
+              type="text"
+              name=""
+              placeholder="Search here..."
+            />
+            <button class="btn rounded-pill search-button" onclick="searchMovie()" id="search-button">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+          <div id="error-msg-box" class="error-msg-box"></div>
+        </div>
+      </div>
+     <div class="result-container" id="result-container">
+      <!-- <div class="card mb-3 " style="max-width: 800px;">
+        <div class="row g-0">
+          <div class="col-md-4 col-sm-12">
+            <img src="movieImages/Harry Potter and the Sorcerers Stone (20th Anniversary) MightyPrint™ W.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 movie-content">
+            <div class="card-body">
+              <h5 class="card-title text-center">Movie : ${data.Title}</h5>
+              <p >Release Year : ${data.Year} <br> Genre : ${data.Genre} <br>Director : ${data.Director} <br>
+                Actors : ${data.Actors}
+                <br>
+                Language : ${data.Language}
+                <br>
+                Country : ${data.Country}
+              </p>
+              <p class="card-text ms-3">Plot : ${data.Plot}
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed quo dolores in ducimus tenetur ab maxime animi facere, illo amet distinctio molestiae, excepturi consequatur doloremque tempora aliquam ut dolorum veniam. Nam nemo nisi deleniti facilis numquam vitae aspernatur modi corporis in totam, magnam commodi quibusdam unde, fugit aut, eum labore earum ipsam sequi fugiat excepturi maxime? Omnis numquam similique minima mollitia, commodi non magnam? Excepturi ea repellat et modi at assumenda deleniti expedita iure ullam deserunt sequi consectetur fuga, blanditiis, soluta, esse inventore explicabo doloremque ad eligendi distinctio nulla? Ex, reiciendis. Voluptatum nisi consequatur hic illum, libero voluptate error.
+              </p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+     </div>
+    </div>
+
+    <script src="movie.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+
+   
+  </body>
+</html>
